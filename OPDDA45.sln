@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPDDA45", "OPDDA45\OPDDA45.csproj", "{A5C85569-CE2F-495F-A65A-ED4553BCBF8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C85569-CE2F-495F-A65A-ED4553BCBF8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C85569-CE2F-495F-A65A-ED4553BCBF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C85569-CE2F-495F-A65A-ED4553BCBF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C85569-CE2F-495F-A65A-ED4553BCBF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {861BBA1B-A135-4250-84DB-4BDA5CC5AF16}
+	EndGlobalSection
+EndGlobal
