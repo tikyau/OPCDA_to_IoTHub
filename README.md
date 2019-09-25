@@ -2,7 +2,7 @@
 
 This repo contain the full source code in C# that allows you to 
 1. Remotely connect to your OPCDA Server.
-3. Extracting the relevant data at a regular predefined time interval from your OPCDA server by providing the tag names concerned .
+3. Extract the relevant data at a regular predefined time interval from your OPCDA server by providing the tag names concerned .
 4. Stream the data into your IoT Hub on Azure.
 
 
