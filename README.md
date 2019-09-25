@@ -8,7 +8,7 @@ This repo contain the full source code in C# that allows you to
 
 # Installation and Deployment
 
-1. Run the full solution (OPDDA45.sln) with Visual Studio 2017 is recommended. 
+1. Build and run the full solution (OPDDA45.sln) with Visual Studio 2017 is recommended. 
 
 2. Fill in your OPCDA Server info (Host Name and Server Name) and IoT Hub Connection String in the app.config file.
    ![Capture2](https://user-images.githubusercontent.com/17831550/65575809-3dbd7300-dfa3-11e9-8145-3561c2f2c7f6.PNG)
