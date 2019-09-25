@@ -5,6 +5,9 @@ This repo contain the full source code in C# that allows you to
 3. Extract the relevant data at a regular predefined time interval from your OPCDA server by providing the tag names concerned .
 4. Stream the data into your IoT Hub on Azure.
 
+****Prerequisites***
+Before you start this tutorial, you should have obtained all your tag names from an OPC Client. You can easily export all the tag names of your OPC server with an OPC Explorer as shown below:
+![66d71a321004 1](https://user-images.githubusercontent.com/17831550/65606541-ac1f2700-dfdd-11e9-981f-e2a27a689ac8.gif)
 
 # Installation and Deployment
 
