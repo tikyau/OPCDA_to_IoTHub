@@ -19,8 +19,7 @@ This repo contain the full source code in C# that allows you to
 4. Update the schema of your IoT Hub Message in SimulatedDevice.cs
     [https://imgbbb.com/image/LtJe9d](https://imgbbb.com/image/LtJe9d)
 
-5. The repo contains all the DLLs that are required to establish the connection and extracting the tag data from your OPCDA Server
-![enter image description here](https://imgbbb.com/image/LtJPlD)
+5. The repo contains all the DLLs that are required to establish the connection and extracting the tag data from your OPCDA Server        (https://imgbbb.com/image/LtJPlD)
 
 6. Successful console output:
     [https://imgbbb.com/image/LtJfHe](https://imgbbb.com/image/LtJfHe)
