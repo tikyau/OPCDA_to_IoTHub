@@ -11,15 +11,16 @@ This repo contain the full source code in C# that allows you to
 1. Run the full solution (OPDDA45.sln) with Visual Studio 2017 is recommended. 
 
 2. Fill in your OPCDA Server info (Host Name and Server Name) and IoT Hub Connection String in the app.config file.
-    [https://imgbbb.com/image/LtJyH2](https://imgbbb.com/image/LtJyH2)
+   ![Capture1](https://user-images.githubusercontent.com/17831550/65575841-5168d980-dfa3-11e9-99a3-83da87348f23.PNG)
 
 3. Update the tag names in the Tags.txt file:
-    [https://imgbbb.com/image/LtJOqr](https://imgbbb.com/image/LtJOqr)
+   ![Capture2](https://user-images.githubusercontent.com/17831550/65575809-3dbd7300-dfa3-11e9-8145-3561c2f2c7f6.PNG)
 
 4. Update the schema of your IoT Hub Message in SimulatedDevice.cs
-    [https://imgbbb.com/image/LtJe9d](https://imgbbb.com/image/LtJe9d)
+   ![Capture3](https://user-images.githubusercontent.com/17831550/65575778-2bdbd000-dfa3-11e9-9b1d-d863997e841c.PNG)
 
-5. The repo contains all the DLLs that are required to establish the connection and extracting the tag data from your OPCDA Server        (https://imgbbb.com/image/LtJPlD)
+5. The repo contains all the DLLs that are required to establish the connection and extracting the tag data from your OPCDA Server            ![Capture4](https://user-images.githubusercontent.com/17831550/65575755-1e264a80-dfa3-11e9-86fa-c647cd6f90cf.PNG)
 
 6. Successful console output:
-    [https://imgbbb.com/image/LtJfHe](https://imgbbb.com/image/LtJfHe)
+   ![Screenshot (10)](https://user-images.githubusercontent.com/17831550/65575696-077ff380-dfa3-11e9-875c-072f0ae4a4bc.png)
+
