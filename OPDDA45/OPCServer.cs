@@ -13,19 +13,19 @@ namespace OPDDA45
     public class OPCServer
     {
         private static Opc.Da.Server _server;
-        private string _serverName = String.Empty;
+        private string _serverurl = String.Empty;
         private StringBuilder _error = new StringBuilder();
 
         /// <summary>
         /// Creates an instance of OPC server and tries to connect to it.
         /// </summary>
         /// <param name="serverName">Name of the server.</param>
-        public OPCServer(string serverName)
+        public OPCServer(string serverurl)
         {
-            if (String.IsNullOrEmpty(serverName))
-                throw new Exception(String.Format("Server name '{0}' is not valid", _serverName));
+            if (String.IsNullOrEmpty(serverurl))
+                throw new Exception(String.Format("Server url '{0}' is not valid", _serverurl));
 
-            _serverName = serverName;
+            _serverurl = serverurl;
 
             Connect();
         }
@@ -35,7 +35,7 @@ namespace OPDDA45
         /// </summary>
         private void Connect()
         {
-            Opc.URL url = new Opc.URL("opcda://phitstvm002/" + _serverName);
+            Opc.URL url = new Opc.URL(_serverurl);
             OpcCom.Factory fact = new OpcCom.Factory();
             _server = new Opc.Da.Server(fact, null);
 

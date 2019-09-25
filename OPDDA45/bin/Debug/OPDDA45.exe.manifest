@@ -270,14 +270,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OPDDA45.exe" size="27584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OPDDA45.exe" size="13760">
       <assemblyIdentity name="OPDDA45" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hFQgLBoEHdoKyV1AeDDsM5kmIfJcnX4UOJqGpZh/kDA=</dsig:DigestValue>
+        <dsig:DigestValue>3Ngb+lPV0HlR824Jq7U+69PTpg6whjt+3pqCX2rIANY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -353,13 +353,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="OPDDA45.exe.config" size="808">
+  <file name="OPDDA45.exe.config" size="1246">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>EK/Xv7vSSIxAwpKq41s2MHVAU+iyCxmVLOvsSdNwr9k=</dsig:DigestValue>
+      <dsig:DigestValue>DMoGJErDnWF2E1LD8E5DCq+OIdwCxTczSZd56MM9gkw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Tags.txt" size="6697">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b0PnK9f3cRgE+9MPF6ThVD80Cvk8HM9fAy7BAZaf1/s=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

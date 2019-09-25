@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using System.Text;
 using System.Threading.Tasks;
 using OPDDA45;
+using System.Configuration;
 
 namespace simulated_device
 {
@@ -18,14 +19,13 @@ namespace simulated_device
         private static DeviceClient s_deviceClient;
 
         // The device connection string to authenticate the device with your IoT hub.
-        // Using the Azure CLI:
-        // az iot hub device-identity show-connection-string --hub-name {YourIoTHubName} --device-id MyDotnetDevice --output table
-        private readonly static string s_connectionString = "HostName=OPCDADemo.azure-devices.cn;DeviceId=MyFirstDevice;SharedAccessKey=6GbkPIGV/LBYh7aeb4HtOsS95jaYAdOYw2GDYaloCOM=";
+        private readonly static string s_connectionString = ConfigurationManager.AppSettings["IOTHubConnectionString"];
 
-        // Async method to send simulated telemetry
+        // Async method to send tags telemetry
         private static async void SendDeviceToCloudMessagesAsync()
         {
-            OPCServer srv = new OPCServer("Philips.EMOpcDaServer.1");
+            var opcDAServerUrl = ConfigurationManager.AppSettings["OPCDAServerUrl"];
+            OPCServer srv = new OPCServer(opcDAServerUrl);
             Console.WriteLine(srv.ErrorMessage);
             Console.WriteLine("Connected to OPCDA Server:" + srv.IsConnected);
 
@@ -34,7 +34,8 @@ namespace simulated_device
             while (true)
             {
                 // Create JSON message
-                var results = opcClient.ReadTagVal();
+                var results = opcClient.ReadTagVal(ConfigurationManager.AppSettings["TagFileNamePath"]);
+                // Console.WriteLine("Number of tags data:" + results.Length);
                 foreach(var item in results)
                 {
                     var telemetryDataPoint = new
@@ -55,12 +56,12 @@ namespace simulated_device
                     await s_deviceClient.SendEventAsync(message);
                     Console.WriteLine("{0} > Sending message: {1}", DateTime.Now, messageString);
                 }
-                await Task.Delay(10000);
+                await Task.Delay(Convert.ToInt32(ConfigurationManager.AppSettings["StreamInterval"]));
             }
         }
         private static void Main(string[] args)
         {
-            Console.WriteLine("IoT Hub Quickstarts #1 - Simulated device. Ctrl-C to exit.\n");
+            Console.WriteLine("Sending OPCDA server data to iothub. Ctrl-C to exit.\n");
 
             // Connect to the IoT hub using the MQTT protocol
             s_deviceClient = DeviceClient.CreateFromConnectionString(s_connectionString, TransportType.Mqtt);
@@ -69,3 +70,5 @@ namespace simulated_device
         }
     }
 }
+
+
