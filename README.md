@@ -13,7 +13,7 @@ Before you start this tutorial, you should have obtained all your tag names from
 
 1. Build and run the full solution (OPDDA45.sln) with Visual Studio 2017 is recommended. 
 
-2. Fill in your OPCDA Server info (Host Name and Server Name) and IoT Hub Connection String in the app.config file.
+2. Fill in your OPCDA Server info (Host Name and Server Name), IoT Hub Connection String and define your stream interval in the app.config file.
    ![Capture2](https://user-images.githubusercontent.com/17831550/65575809-3dbd7300-dfa3-11e9-8145-3561c2f2c7f6.PNG)
 
 3. Update the tag names in the Tags.txt file:
