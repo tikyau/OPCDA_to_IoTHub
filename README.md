@@ -17,7 +17,7 @@ Before you start this tutorial, you should have obtained all your tag names from
    ![Capture2](https://user-images.githubusercontent.com/17831550/65575809-3dbd7300-dfa3-11e9-8145-3561c2f2c7f6.PNG)
 
 3. Update the tag names in the Tags.txt file:
-   ![Capture3](https://user-images.githubusercontent.com/17831550/65575778-2bdbd000-dfa3-11e9-9b1d-d863997e841c.PNG)
+   ![tag](https://user-images.githubusercontent.com/17831550/65658916-37d79880-e05c-11e9-9cfb-53eb9bc68716.png)
    
 4. Update the schema of your IoT Hub Message as desired in SimulatedDevice.cs as shown below:
    ![Capture4](https://user-images.githubusercontent.com/17831550/65575755-1e264a80-dfa3-11e9-86fa-c647cd6f90cf.PNG)
